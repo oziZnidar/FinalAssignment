@@ -23,3 +23,5 @@ app.use('/api/resources', resourcesRouter);
 app.listen(PORT, () => {
   console.log(`🚀 Node.js Core API Gateway listening on http://localhost:${PORT}`);
 });
+
+app.options('*', cors());
