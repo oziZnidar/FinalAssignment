@@ -10,8 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({ 
   origin: 'https://final-assignment-delta-one.vercel.app/',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+  credentials: true
 }));
 app.use(express.json());
 
